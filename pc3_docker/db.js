@@ -1,5 +1,5 @@
 conn = new Mongo();
-db = conn.getDB("myappdb3");
+db = conn.getDB("dockerdb");
 db.alumnos.insert(
   [
    {codigo: '2018', nombre:  'Gustavo',  email:  'gan@abc.com', 

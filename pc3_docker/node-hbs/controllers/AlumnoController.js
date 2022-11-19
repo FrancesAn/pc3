@@ -8,7 +8,9 @@ alumnoController.list = function(req, res){
         console.log("The INDEX");
         res.render('../views/alumno/index', {alumnos: 
 alumnos,titulo:'INDEX'} );
+
     });
+
 };
 alumnoController.show = function(req, res){
     Alumno.findOne({_id: req.params.id}).exec(function(err, alumno){
@@ -27,7 +29,7 @@ alumno.save(function(err){
     if( err ){ console.log('Error: ', err); return; }
     
     console.log("Successfully created a alumno. :)");
-    res.redirect("/alumnos/show/"+usuario._id);
+    res.redirect("/alumnos/show/"+alumno._id);
     //res.redirect("/alumnos");
 });
 };

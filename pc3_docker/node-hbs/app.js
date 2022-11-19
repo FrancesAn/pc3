@@ -13,7 +13,7 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-var mongoDB = 'mongodb://127.0.0.1:27017/myappdb3';
+var mongoDB = 'mongodb://127.0.0.1:27017/dockerdb';
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology:true});
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
