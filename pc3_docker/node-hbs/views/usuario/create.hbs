@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crear Alumno</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3><a href="/alumnos">Lista de Alumnos</a></h3>
+            <h1>Crear Nuevo Alumno</h1>
+            <form action="/alumnos/save" method="post">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Codigo</td>
+                            <td><input type="text" name="codigo" 
+/></td>
+                        </tr>                        
+                        <tr>
+                            <td>Nombre</td>
+                            <td><input type="text" name="nombre" 
+/></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="text" name="email" 
+/></td>
+                        </tr>
+                        <tr>
+                            <td>Facultad</td>
+                            <td><input type="text" name="facultad" 
+/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" 
+value="Grabar" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
